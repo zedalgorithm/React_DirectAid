@@ -4,10 +4,13 @@
     "slug": "Directaid2",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/DirectAidLogo1.png",
+      "backgroundColor": "#ffffff"
+    },
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/DirectAidLogo1.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,11 +20,30 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "googleServicesFile": "./google-services.json",
+        "config": {
+          "googleMaps": {
+            "apiKey": "AIzaSyAYQBD5gUFDhRQNDxd_bx-eesznMxijX8k"
+          }
+        }
+      },
+      "permissions": [
+        "CAMERA"
+      ],
+      "package": "com.zed455555.Directaid2"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a7a598a9-320d-43c6-9f19-fe7eeb53f3c0"
+      }
+    },
+    "owner": "zed455555",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
